@@ -1,18 +1,14 @@
-
 ![Logo](https://dnzatgrevuzjtvdghuxs.supabase.co/storage/v1/object/public/madia/assets/Happy.png)
-
 
 # Madia
 
-Madia merupakan website blog yang dimana dengan website ini kita dapat berbagi informasi secara realtime dan melihat artikel-artikel yang sedang hangat dibicarakan. 
-
+Madia merupakan website blog yang dimana dengan website ini kita dapat berbagi informasi secara realtime dan melihat artikel-artikel yang sedang hangat dibicarakan.
 
 ## Screenshots
 
-| Desktop View | Mobile View |
-|:---:|:---:|
-| ![Desktop View](https://dnzatgrevuzjtvdghuxs.supabase.co/storage/v1/object/public/madia/assets/MacbookView(1).png) | ![Mobile View](https://dnzatgrevuzjtvdghuxs.supabase.co/storage/v1/object/public/madia/assets/IphoneView(1).png) |
-
+|                                                     Desktop View                                                     |                                                    Mobile View                                                     |
+| :------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------: |
+| ![Desktop View](<https://dnzatgrevuzjtvdghuxs.supabase.co/storage/v1/object/public/madia/assets/MacbookView(1).png>) | ![Mobile View](<https://dnzatgrevuzjtvdghuxs.supabase.co/storage/v1/object/public/madia/assets/IphoneView(1).png>) |
 
 ## Features
 
@@ -20,15 +16,13 @@ Madia merupakan website blog yang dimana dengan website ini kita dapat berbagi i
 - Menyukai dan membaca artikel
 - Membuat artikel dengan fitur cover-image, tags, deskripsi menggunakan markdown editor
 - Berkunjung ke profil pengguna lain
-- Menambahkan, mengupdate, dan menghapus profil pengguna 
+- Menambahkan, mengupdate, dan menghapus profil pengguna
 - Pencarian user dan artikel terkait
 - Filtering artikel berdasarkan tag
-
 
 ## Demo
 
 https://madia.vitomanik.com/
-
 
 ## Run Locally
 
@@ -84,13 +78,11 @@ Preview
 
 - Implementasi infinite scroll
 
-
 ## Tech Stack
 
 **Client:** Nuxt 3, TailwindCSS, Headlessui, AOS, Uppy JS, md-editor-v3
 
 **Server:** Supabase
-
 
 ## Environment Variables
 
@@ -103,9 +95,3 @@ To run this project, you will need to add the following environment variables to
 `SUPABASE_SERVICE_ROLE`
 
 `SUPABASE_PROJECT_ID`
-
-
-## 🔗 Links
-
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/vitomanik)
-
