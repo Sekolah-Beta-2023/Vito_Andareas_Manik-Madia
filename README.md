@@ -1,63 +1,111 @@
-# Nuxt 3 Minimal Starter
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+![Logo](https://dnzatgrevuzjtvdghuxs.supabase.co/storage/v1/object/public/madia/assets/Happy.png)
 
-## Setup
 
-Make sure to install the dependencies:
+# Madia
 
-```bash
-# npm
-npm install
+Madia merupakan website blog yang dimana dengan website ini kita dapat berbagi informasi secara realtime dan melihat artikel-artikel yang sedang hangat dibicarakan. 
 
-# pnpm
-pnpm install
 
-# yarn
-yarn install
-```
+## Screenshots
 
-## Development Server
+| Desktop View | Mobile View |
+|:---:|:---:|
+| ![Desktop View](https://dnzatgrevuzjtvdghuxs.supabase.co/storage/v1/object/public/madia/assets/MacbookView(1).png) | ![Mobile View](https://dnzatgrevuzjtvdghuxs.supabase.co/storage/v1/object/public/madia/assets/IphoneView(1).png) |
 
-Start the development server on `http://localhost:3000`:
 
-```bash
-# npm
-npm run dev
+## Features
 
-# pnpm
-pnpm run dev
+- Autentikasi
+- Menyukai dan membaca artikel
+- Membuat artikel dengan fitur cover-image, tags, deskripsi menggunakan markdown editor
+- Berkunjung ke profil pengguna lain
+- Menambahkan, mengupdate, dan menghapus profil pengguna 
+- Pencarian user dan artikel terkait
+- Filtering artikel berdasarkan tag
 
-# yarn
-yarn dev
-```
 
-## Production
+## Demo
 
-Build the application for production:
+https://madia.vitomanik.com/
+
+
+## Run Locally
+
+Clone the project
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
+  git clone https://github.com/Sekolah-Beta-2023/Vito_Andareas_Manik-Madia.git
 ```
 
-Locally preview production build:
+Go to the project directory
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
+  cd Vito_Andareas_Manik-Madia
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run madia
+```
+
+Build
+
+```bash
+  npm run build
+```
+
+Generate
+
+```bash
+  npm run generate
+```
+
+Preview
+
+```bash
+  npm run preview
+```
+
+## Roadmap
+
+- Menambahkan fitur komentar
+
+- Menambahkan light mode
+
+- Membuat mobile responsive
+
+- Implementasi infinite scroll
+
+
+## Tech Stack
+
+**Client:** Nuxt 3, TailwindCSS, Headlessui, AOS, Uppy JS, md-editor-v3
+
+**Server:** Supabase
+
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`SUPABASE_URL`
+
+`SUPABASE_KEY`
+
+`SUPABASE_SERVICE_ROLE`
+
+`SUPABASE_PROJECT_ID`
+
+
+## 🔗 Links
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/vitomanik)
+
