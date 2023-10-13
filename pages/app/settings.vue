@@ -384,7 +384,6 @@ const {
   username,
   website_url,
 } = await profile;
-console.log(avatar_url);
 
 const open = ref(false);
 const handleClose = () => {

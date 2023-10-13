@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-white dark:bg-transparent" data-aos="fade-down">
+  <header class="bg-black dark:bg-transparent" data-aos="fade-down">
     <nav
       class="max-w-screen-xl flex items-center justify-between mx-auto py-4 px-2 md:px-0"
     >
@@ -46,7 +46,7 @@
         id="navbar-cta"
       >
         <ul
-          class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700"
+          class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:dark:bg-transparent dark:border-gray-700"
         >
           <HomeHeaderRoutes
             v-for="route in pages"

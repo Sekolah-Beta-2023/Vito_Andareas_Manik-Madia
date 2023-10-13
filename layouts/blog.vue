@@ -1,5 +1,5 @@
 <template>
-  <div class="dark text-white dark:bg-black relative">
+  <div class="dark text-white dark:bg-black relative bg-black">
     <LayoutBlogHeader />
     <LayoutBlogHeaderSm />
     <slot />

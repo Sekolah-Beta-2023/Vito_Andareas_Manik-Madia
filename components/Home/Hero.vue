@@ -13,12 +13,12 @@
       class="w-full flex items-center justify-center flex-col px-4 md:px-0 flex-1 space-y-4 z-50"
     >
       <h1
-        class="dark:text-white text-2xl md:text-4xl font-bold backdrop-blur-sm md:backdrop-blur-none"
+        class="text-white text-2xl md:text-4xl font-bold backdrop-blur-sm md:backdrop-blur-none"
       >
         Madia Blog
       </h1>
       <p
-        class="dark:text-white md:text-base text-center md:max-w-[85%] md:block hidden"
+        class="text-white md:text-base text-center md:max-w-[85%] md:block hidden"
       >
         Madia Blog bukan sekadar platform, tetapi sebuah komunitas yang
         berkembang. Ini adalah rumah bagi mereka yang memiliki semangat untuk
@@ -26,7 +26,7 @@
         kami di Madia Blog dan saksikan bagaimana kita bersama-sama membentuk
         masa depan teknologi yang lebih cerah!
       </p>
-      <p class="dark:text-white md:text-base text-center backdrop-blur-sm">
+      <p class="text-white md:text-base text-center backdrop-blur-sm">
         "Madia Blog: Menggali Kreativitas, Meretas Inovasi, dan Menguatkan
         Komunitas Developer!"
       </p>
@@ -45,13 +45,13 @@
       <div class="flex gap-2 items-center">
         <button
           @click="navigateTo('/app')"
-          class="px-4 py-2 w-full md:w-fit dark:text-white font-semibold rounded-md shadow-md bg-[#2BC286] hover:bg-opacity-80 transition-all ease-in-out"
+          class="px-4 py-2 w-full md:w-fit text-white font-semibold rounded-md shadow-md bg-[#2BC286] hover:bg-opacity-80 transition-all ease-in-out"
         >
           Jump to app 🦸
         </button>
         <button
           @click="navigateTo('/auth/signup')"
-          class="hidden md:block px-4 py-2 w-full md:w-fit dark:text-[#2BC286] font-semibold rounded-md shadow-md bg-[#fff] hover:bg-opacity-80 transition-all ease-in-out"
+          class="hidden md:block px-4 py-2 w-full md:w-fit text-[#2BC286] font-semibold rounded-md shadow-md bg-[#fff] hover:bg-opacity-80 transition-all ease-in-out"
         >
           Signup Now 👻
         </button>

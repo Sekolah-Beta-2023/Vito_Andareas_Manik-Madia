@@ -14,7 +14,7 @@
           <div>
             <NuxtImg
               :src="avatarImgUrl"
-              class="rounded-full max-h-[40px] object-cover"
+              class="rounded-full w-[40px] h-[40px] object-cover"
             />
           </div>
           <div class="leading-[17px]">

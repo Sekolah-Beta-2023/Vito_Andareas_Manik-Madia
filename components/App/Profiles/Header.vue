@@ -7,8 +7,14 @@
       class="w-[112px] h-[112px] rounded-full border-[6px] border-black absolute right-[calc((100%/2)-56px)] -top-[56px]"
     />
     <!-- action right -->
-    <div class="flex space-x-4 place-content-end p-8">
-      <button class="px-4 py-2 font-semibold rounded-md bg-green-500">
+    <div
+      class="flex space-x-4 place-content-end p-8"
+      title="The feature is ongoing"
+    >
+      <button
+        class="px-4 py-2 font-semibold rounded-md bg-green-500"
+        disabled="true"
+      >
         Follow
       </button>
       <IconsMoreHorizontal size="30px" />

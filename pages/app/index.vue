@@ -17,7 +17,7 @@
           <li v-for="tag in listOfTags" :key="tag.id">
             <button
               type="button"
-              @click="handlerFilterTags(tag.tag)"
+              @click="handlerFilterTags(tag)"
               class="hover:underline hover:text-green-500 cursor-pointer"
             >
               <span :style="{ color: tag.color }">#</span> {{ tag.tag }}
@@ -30,7 +30,7 @@
     <!-- content -->
     <AppHomeContent>
       <AppHomePosts
-        v-for="post in ((secondPostsFromQuery?.length! > 0 ? secondPostsFromQuery : listOfPosts) as RowPosts[])"
+        v-for="post in listOfPosts as RowPosts[]"
         :key="post.title"
         :avatar-img-url="post.user.avatar_url || 'https://placehold.co/40'"
         :cover-img-url="post.cover_image_url!"
@@ -59,6 +59,7 @@
 
 <script setup lang="ts">
 import { RowPosts } from "~/types/posts";
+import { RowTags } from "~/types/tags";
 
 // TODO: schema fetch posts
 const { useFetchAllPosts, useGetListsTags, useFetchSinglePosts } = usePosts();
@@ -68,13 +69,6 @@ const { data: listOfTags } = await useGetListsTags();
 const client = useSupabase();
 
 const listOfPosts = ref<RowPosts[]>();
-
-// const queryOfPosts = ref<RowPosts[]>();
-
-const { data: payload, error } = await useFetchAllPosts();
-listOfPosts.value = payload;
-
-const secondPostsFromQuery = ref<RowPosts[]>();
 
 const posts = client
   .channel("custom-insert-channel")
@@ -127,17 +121,20 @@ const enableCustomLayout = () => {
 // const route = useRoute();
 // const router = useRouter();
 
-const handlerFilterTags = async (qTag: string) => {
+const handlerFilterTags = async (qTag: RowTags | "all") => {
   if (qTag !== "all") {
-    secondPostsFromQuery.value = listOfPosts.value?.filter((post) =>
-      post.tags.map((tag) => tag.tag).includes(qTag)
-    );
+    const { data } = await useFetchAllPosts(qTag);
+    listOfPosts.value = data;
   } else {
-    secondPostsFromQuery.value = [];
     const { data, error } = await useFetchAllPosts();
     listOfPosts.value = data;
   }
 };
+
+onMounted(async () => {
+  const { data: payload, error } = await useFetchAllPosts();
+  listOfPosts.value = payload;
+});
 
 onBeforeMount(() => {
   enableCustomLayout();

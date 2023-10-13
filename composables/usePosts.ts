@@ -143,12 +143,10 @@ const useFetchAllPosts = async (query?: RowTags) => {
     `);
 
     let temp = payload as RowPosts[];
-    console.log(temp);
 
     data = temp.filter((post) =>
       post.tags.map((tag) => tag.tag).includes(query.tag)
     );
-    console.log(temp);
     return {
       count,
       error,

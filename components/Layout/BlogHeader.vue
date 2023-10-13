@@ -8,17 +8,14 @@
       <!-- left -->
       <div class="flex space-x-4 items-center relative">
         <NuxtLink to="/app"><IconsMadiaGreen /></NuxtLink>
-        <form class="flex items-center relative">
+        <div class="flex items-center relative">
           <input
             type="text"
-            placeholder="Find your friends..."
+            placeholder="@jonhdoe... or title posts"
             v-model="searchInput"
             class="transition-all ease-in-out bg-zinc-950 rounded-md border-none outline outline-slate-600 outline-1 focus:outline-2 active:outline-green-500 focus:outline-green-500 w-[420px] text-slate-100 p-2"
           />
-          <button class="invisible pointer-events-auto flex items-center">
-            <IconsSearch class="absolute right-2 cursor-pointer visible" />
-          </button>
-        </form>
+        </div>
         <div
           class="w-[420px] bg-black/70 backdrop-blur-sm h-auto absolute top-11 right-0 rounded-lg p-4"
           v-if="queryFromSearch.length > 0"
@@ -84,9 +81,9 @@
         >
           <HLMenuButton
             ><NuxtImg
-              alt="Manik"
-              src="https://placehold.co/40"
-              class="rounded-full"
+              alt="avatar"
+              :src="profile.avatar_url || 'https://placehold.co/40'"
+              class="rounded-full w-[40px] h-[40px]"
           /></HLMenuButton>
           <Transition
             enter-active-class="transition duration-100 ease-out"
@@ -275,12 +272,10 @@ async function handleSearching() {
     queryFromSearch.value = data;
   }
 }
-console.log(queryFromSearch.value);
 
 watchDebounced(
   searchInput,
   async () => {
-    console.log("changed! ", searchInput.value);
     if (searchInput.value.length >= 3) {
       await handleSearching();
     } else {

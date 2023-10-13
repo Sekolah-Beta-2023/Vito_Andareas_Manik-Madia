@@ -14,7 +14,7 @@
           <div class="overflow-hidden max-w-[40px]">
             <NuxtImg
               :src="avatarImgUrl"
-              class="rounded-full max-h-[40px] overflow-hidden"
+              class="rounded-full w-[40px] h-[40px] object-cover overflow-hidden"
             />
           </div>
           <div class="leading-[17px]">
@@ -77,7 +77,8 @@
             </button>
           </ClientOnly>
           <div class="flex flex-1 items-center">
-            <IconsComment class="mr-2" /> Comments
+            <IconsComment class="mr-2" title="The feature is ongoing" />
+            Comments
           </div>
 
           <div class="flex items-center font-semibold" title="viewed 50 times">
